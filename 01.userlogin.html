@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="00.user.css"> 
+    <style>
+        *{
+            background-color: white;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;                
+            color: #ffffff;
+        }
+        h2{
+            font-size: 2.2rem;
+            color: #980328;
+        }
+        input{
+            color: #1E2022;
+            padding: .5vh;
+            border-radius: 5px;
+            height: 3vh;
+            font-size: 1.5rem;
+        }
+        .login-form,.image-container {
+            flex: 1; 
+            padding: 25px;
+        }
+        div{
+            margin-top: 2%;
+        }
+        .login-form {
+            background-color:white;
+            margin-right: 20px; 
+            height: 50vh;
+            color: #788189;
+            box-shadow: 0;
+        }
+        
+        .image-container img {
+            max-width: 100%;
+            height: 50vh;
+        }
+        button{
+            background-color: #980328;
+    color: #f0f5f9;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 11vw;
+    height: 7vh;
+    font-size: 1.70rem;
+    font-family: 'CP';
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <center><img src="logo.png" alt="Image"></center>
+        </div>
+        <div class="login-form">
+            <center>
+                <h2>Login</h2><br>
+                <form action="02.dashboard.php" method="post" onsubmit="return validateForm()">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required><br><br><br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required><br><br><br>
+                    <button type="submit">Login</button>
+                </form>
+            </center>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+h1,h2{
+    color: #F0F5F9;
+}
+*{
+    font-family: 'CP';
+    background-color: white;
+    /* border: 1px solid white; */
+}
+body{
+    background-color: white;
+    font-size: 1.5rem;
+    color: #788189;
+    margin: 7%;
+}
+@font-face {
+    font-family: 'CP';
+    src: url('Courier\ Prime.ttf') format('truetype');
+}
+button {
+    background-color: #980328;
+    color: #f0f5f9;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 11vw;
+    height: 7vh;
+    font-size: 1.30rem;
+    font-family: 'CP';
+}
