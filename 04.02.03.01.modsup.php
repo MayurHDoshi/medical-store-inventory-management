@@ -5,10 +5,11 @@ if(isset($_GET['sup_ids'])) {
     $supIds = json_decode($_GET['sup_ids']);
 
     // Establish connection to the database
-    $servername = "localhost";
-    $username = "mym";
-    $password = "mym123";
-    $dbname = "mym";
+    $__db = require __DIR__ . '/config.php';
+    $servername = $__db['host'];
+    $username = $__db['user'];
+    $password = $__db['pass'];
+    $dbname = $__db['db'];
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 

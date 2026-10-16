@@ -95,10 +95,11 @@
 </html>
 
 <?php 
-$servername = "localhost";
-$username = "mym";
-$password = "mym123";
-$dbname = "mym";
+$__db = require __DIR__ . '/config.php';
+$servername = $__db['host'];
+$username = $__db['user'];
+$password = $__db['pass'];
+$dbname = $__db['db'];
 
 $name = $_POST['name'];
 $email = $_POST['mail'];

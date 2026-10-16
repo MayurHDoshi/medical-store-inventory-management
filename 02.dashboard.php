@@ -1,8 +1,9 @@
 <?php
-$servername = "localhost";
-$username = "mym";
-$password = "mym123";
-$dbname = "mym";
+$__db = require __DIR__ . '/config.php';
+$servername = $__db['host'];
+$username = $__db['user'];
+$password = $__db['pass'];
+$dbname = $__db['db'];
 
 // Define the threshold value
 $threshold = 20;
@@ -128,10 +129,11 @@ $conn->close();
         <div class="notification-center-content">
             <?php
             // PHP code to retrieve data for notification center
-            $servername = "localhost";
-            $username = "mym";
-            $password = "mym123";
-            $dbname = "mym";
+            $__db = require __DIR__ . '/config.php';
+            $servername = $__db['host'];
+            $username = $__db['user'];
+            $password = $__db['pass'];
+            $dbname = $__db['db'];
 
             $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -260,10 +262,11 @@ $conn->close();
                                     <th style= "width: 100%">Name</th>
                                     <th style= "width: 10rem">Price</th>
                                 <?php
-                                $servername = "localhost";
-                                $username = "mym";
-                                $password = "mym123";
-                                $dbname = "mym";
+                                $__db = require __DIR__ . '/config.php';
+                                $servername = $__db['host'];
+                                $username = $__db['user'];
+                                $password = $__db['pass'];
+                                $dbname = $__db['db'];
 
                                 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -341,10 +344,11 @@ $conn->close();
                         <tr>
                             <td>
                                 <?php
-                                $servername = "localhost";
-                                $username = "mym";
-                                $password = "mym123";
-                                $dbname = "mym";
+                                $__db = require __DIR__ . '/config.php';
+                                $servername = $__db['host'];
+                                $username = $__db['user'];
+                                $password = $__db['pass'];
+                                $dbname = $__db['db'];
 
                                 $conn = new mysqli($servername, $username, $password, $dbname);
 

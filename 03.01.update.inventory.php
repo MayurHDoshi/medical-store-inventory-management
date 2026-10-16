@@ -7,10 +7,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $data = json_decode(file_get_contents("php://input"), true);
 
     // Connect to your database
-    $servername = "localhost";
-    $username = "mym";
-    $password = "mym123";
-    $dbname = "mym";
+    $__db = require __DIR__ . '/config.php';
+    $servername = $__db['host'];
+    $username = $__db['user'];
+    $password = $__db['pass'];
+    $dbname = $__db['db'];
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 

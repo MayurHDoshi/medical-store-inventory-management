@@ -1,76 +1,29 @@
-# Medical Store Inventory Web App
+# Medical Store Inventory Management
 
-Web-based system to manage medical store operations. Tracks inventory, handles billing, and manages suppliers using a database-backed workflow.
+Web-based system for managing a medical store: stock tracking, billing, and supplier management, backed by a MySQL database.
+
+Built as an academic group project at NMIMS MPSTME.
 
 ## Features
 
-* Inventory management
+- **Inventory management** - add, update and delete medicines; track stock levels with low-stock alerts
+- **Billing** - generate bills and manage transactions
+- **Supplier management** - supplier records linked to inventory and purchase orders
+- **Search and filtering** - locate medicines quickly
+- **Dashboard** - stock overview with charts
 
-  * Add, update, delete medicines
-  * Track stock levels and availability
+## Tech stack
 
-* Billing system
+PHP, MySQL, HTML/CSS, JavaScript (Chart.js)
 
-  * Generate bills
-  * Calculate totals and manage transactions
+## Setup
 
-* Supplier management
+1. Import `mym.sql` into MySQL (creates the `mym` database with sample data).
+2. Copy `config.example.php` to `config.php` and fill in your local MySQL credentials. `config.php` is gitignored - never commit real credentials.
+3. Serve the folder with Apache/Nginx (e.g. XAMPP) and open `01.userlogin.html`.
 
-  * Store supplier details
-  * Link suppliers with inventory
+## Docs
 
-* Database integration
-
-  * Persistent storage
-  * Efficient query handling
-
-* Search and filtering
-
-  * Locate medicines quickly
-  * Filter based on required fields
-
-## Tech Stack
-
-* Frontend: HTML, CSS, JavaScript
-* Backend: PHP
-* Database: MySQL
-
-## Setup Instructions
-
-1. Clone the repository
-
-```
-git clone https://github.com/MayurHDoshi/medical-store-inventory-management
-```
-
-2. Move project to server directory
-   Place inside htdocs if using XAMPP
-
-3. Setup database
-
-* Open phpMyAdmin
-* Create a new database
-* Import SQL file
-
-4. Configure database connection
-   Update credentials in the configuration file
-
-5. Run the project
-   Open browser
-
-```
-http://localhost/medical-store-inventory-management
-```
-
-## Usage
-
-* Add medicines to inventory
-* Update stock after sales
-* Generate bills
-* Manage supplier records
-
-## Key Highlights
-
-* Maintains consistent inventory records
-* Reduces manual errors in billing
-* Improves operational efficiency
+- `01 - ER Diagram.pdf` - entity-relationship diagram
+- `02 - Schema - 2024 0403.pdf` - database schema
+- Full project report: `Group 12 - F005, F030, F034 - Final Report - Project.docx`

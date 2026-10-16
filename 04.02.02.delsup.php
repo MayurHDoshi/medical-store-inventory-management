@@ -136,10 +136,11 @@
             <form id="deleteForm" method="post">
                 <center><button id="confirmButton" type="button" disabled class="form-type">Confirm</button></center><br>
 <?php
-$servername = "localhost";
-$username = "mym";
-$password = "mym123";
-$dbname = "mym";
+$__db = require __DIR__ . '/config.php';
+$servername = $__db['host'];
+$username = $__db['user'];
+$password = $__db['pass'];
+$dbname = $__db['db'];
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
