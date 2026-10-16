@@ -2,7 +2,7 @@
 
 Web-based system for managing a medical store: stock tracking, billing, and supplier management, backed by a MySQL database.
 
-Built as an academic group project at NMIMS MPSTME.
+Built as an academic group project at NMIMS MPSTME. Mayur led the group and wrote the core code skeleton.
 
 ## Features
 
